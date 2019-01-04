@@ -49,7 +49,7 @@ header {
   left: -230px;
   background: #fff;
   position: absolute;
-  transform: rotate(-45deg);
+  transform: rotate(-35deg);
   -webkit-transform: rotate(-35deg);
   z-index: -1;
 }
@@ -139,49 +139,84 @@ header {
 
 
 .main-content {
+	position: relative;
+    overflow: hidden;
 	background: url(../images/Home_image2.jpg);
 	background-repeat: no-repeat;
 	/*min-height: 100vh;*/
-	background-size: cover;
+	/*background-size: cover;*/
 	background-position: center;
 	/*padding: 250px 0 200px;*/
 	min-height: 1500px;
 }
 
-.main-content .main-corner-ribbon{
-  width: 700px;
-  height: 170px;
-  left: -230px;
+.main-content .main-corner-ribbon-t{
+	width: 1500px;
+	height: 550px;
+	left: -500px;
   background: #fff;
   position: absolute;
-  transform: rotate(-45deg);
+  transform: rotate(-35deg);
   -webkit-transform: rotate(-35deg);
 }
-
-.main-content .main h1 {
-	font-size: 60px;
-	color: #176e9b;
-	/*padding: 0 0 0 60px;*/
-	font-family: Encode Sans Condensed;
-	font-weight: bold;
-	background-color: white;
+.main-content .main-corner-ribbon-b{
+width: 3000px;
+    height: 700px;
+    right: -1457px;
+    bottom: 0;
+    background: #fff;
+    position: absolute;
+    transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
 }
 
-.main-content .main p {
-	font-size: 24px;
-	color: white;
-	/*padding: 0 0 0 60px;*/
+.main-content-overlay{
+background: url(../images/Header_BG.png);
+    background-repeat: no-repeat;
+    min-height: 200px;
+    width: 200px;
+    position: absolute
 }
 
-.main-content .main {
-	margin-top: 20px;
-}
 
+.main-content .content-text {
+	margin-top: 30px;
+    margin-left: 50px;
+}
+.main-content .content-text .main-text {
+	font-size: 48px;
+    color: #217cb1;
+    font-weight: bold;
+    font-family: Encode Sans Condensed;
+}
+.sub-text{
+	padding: 10px 100px 0px 70px;
+}
+.sub-text .dec-text{
+	font-size: 26px;
+	font-weight: 300;
+	font-family: 'Montserrat', sans-serif;
+}
+.service-bottom{
+	position: absolute;
+	bottom: 50px;
+}
+.service-bottom .content-text{
+	margin-left: 500px;
+}
+.service-bottom .sub-text{
+	margin-left: 500px;
+	padding: 0;
+}
+.sub-text .dec-text{
+	font-size: 22px;
+}
 .services {
 	margin: 60px;
 }
 .services .icon{
-	margin-bottom: 15px;
+	padding: 0 30px;
+	min-height: 350px;
 }
 .services .icon:hover {
 	border-bottom: 8px solid yellow;
